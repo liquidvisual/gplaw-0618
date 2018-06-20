@@ -1,0 +1,72 @@
+# # SOCIAL MEDIA
+# - title: Behance
+#   url:
+#   icon: fa fa-behance
+
+# - title: Codepen
+#   url:
+#   icon: fa fa-codepen
+
+# - title: Dribbble
+#   url:
+#   icon: fa fa-dribbble
+
+# - title: Flickr
+#   url:
+#   icon: fa fa-flickr
+
+# - title: Github
+#   url:
+#   icon: fa fa-github
+
+- title: Google Plus
+  url: https://plus.google.com/106874044883032607139
+  icon: fa fa-google-plus
+
+# - title: Instagram
+#   url:
+#   icon: fa fa-instagram
+
+- title: LinkedIn
+  url: https://www.linkedin.com/company/griffiths-parry-lawyers?trk=biz-companies-cym
+  icon: fa fa-linkedin
+
+# - title: Pinterest
+#   url:
+#   icon: fa fa-pinterest
+
+# - title: RSS
+#   url:
+#   icon: fa fa-rss
+
+# - title: SnapChat
+#   url:
+#   icon: fa fa-snapchat
+
+# - title: SoundCloud
+#   url:
+#   icon: fa fa-soundcloud
+
+# - title: Slack
+#   url:
+#   icon: fa fa-slack
+
+# - title: Tumblr
+#   url:
+#   icon: fa fa-tumblr
+
+- title: Facebook
+  url: https://www.facebook.com/griffithsparry
+  icon: fa fa-facebook
+
+- title: Twitter
+  url: https://twitter.com/griffithsparry
+  icon: fa fa-twitter
+
+# - title: Youtube
+#   url:
+#   icon: fa fa-youtube-play
+
+# - title: Vimeo
+#   url:
+#   icon: fa fa-vimeo

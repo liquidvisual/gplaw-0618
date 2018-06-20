@@ -1,0 +1,44 @@
+---
+layout: base__page
+---
+
+{% assign categories = site.categories | sort %}
+{% assign blog_posts = site.data.lorem_ipsum %}
+{% assign item = blog_posts[0] %}
+
+<!-- SECTION -->
+<section class="section pb-0 pb-lg-5">
+    <div class="container">
+
+        <!-- TITLE -->
+        <h1>{{ item.title }}</h1>
+
+        <!-- DATE / AUTHOR -->
+        <p class="text-muted mb-4">
+            <i class="fa fa-clock-o"></i>
+            <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%d %B %Y" }}</time><span class="px-2">|</span>
+            <i class="fa fa-user"></i> &nbsp;<a href="{{ item.author.url }}">{{ item.author.name }}</a>
+        </p>
+
+        <!-- IMAGE -->
+        <p class="float-right ml-5 mb-4">
+            <img src="{{ item.image }}" alt="{{ item.image.title }}">
+        </p>
+
+        <!-- WYSIWYG -->
+        <div class="wysiwyg mb-5">
+            {{ item.body | markdownify }}
+        </div>
+
+        <!-- { % include components/navigation/pagination.html %} -->
+    </div>
+</section>
+
+<div class="container">
+    <hr>
+</div>
+
+
+<!-- { % include app/latest_articles.html title="Other Articles" %} -->
+
+<!-- { % include app/contact.html %} -->

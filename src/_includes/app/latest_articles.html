@@ -1,0 +1,16 @@
+{% assign title = include.title | default: "Latest Articles" %}
+
+<!-- LATEST ARTICLES -->
+<section class="section">
+	<div class="container">
+
+		<h2 class="text-center mb-4">{{ title }}</h2>
+
+		{% include components/cards/cards.html flat=true %}
+
+		<!-- MORE BUTTON -->
+		<p class="text-center">
+			<a href="/articles/" class="btn btn-primary">More Articles <i class="fa fa-angle-right"></i></a>
+		</p>
+	</div>
+</section>

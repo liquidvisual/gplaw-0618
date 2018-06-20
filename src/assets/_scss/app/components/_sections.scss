@@ -1,0 +1,199 @@
+/*
+    SECTIONS.CSS
+
+    - updated: 19.04.18
+    - liquidvisual.com
+
+    GLOSSARY:
+
+        .section
+            &.has-image-bg
+                &.is-fixed
+                &.is-tinted
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// SECTION CONTENT
+// used in the main-body 2-column layout
+//-----------------------------------------------------------------
+
+.section-content {
+	margin: $spacer * 2.5 0;
+
+	// REMOVE CARD PROPERTIES
+	@include media-breakpoint-down(md) {
+		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
+		background: none;
+		box-shadow: none;
+	}
+}
+
+//-----------------------------------------------------------------
+// SECTION
+//-----------------------------------------------------------------
+
+.section {
+    position: relative;
+    padding: ($spacer * 2.5) 0;
+
+    @include media-breakpoint-up(md) {
+        padding: ($spacer * 3) 0;
+    }
+}
+
+//-----------------------------------------------------------------
+// BG FILLS
+//-----------------------------------------------------------------
+
+.has-primary-bg {
+    background: $primary;
+}
+
+//-----------------------------------------------------------------
+// HAS IMAGE BG
+//-----------------------------------------------------------------
+
+.has-image-bg,
+.section[style~=background-image] {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //=========================================
+    // IS FIXED
+    //=========================================
+
+	&.is-fixed {
+		@include media-breakpoint-up(xl) {
+	    	background-attachment: fixed;
+		}
+	}
+
+    //=========================================
+    // IS TINTED
+    //=========================================
+
+    &.is-tinted {
+        > .container {
+            position: relative;
+            z-index: 1; // [LOCKED]
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            // background-color: rgba(black, 0.6); //rgba(#222, 0.6);
+            background-color: rgba($secondary, 0.48);
+            // z-index: 1;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// SPLIT SECTION (used on homepage)
+//-----------------------------------------------------------------
+
+.split-section {
+    font-size: rem-calc(20);
+    color: white;
+
+    @include media-breakpoint-up(md) {
+        padding: rem-calc(120 0 90 0);
+    }
+
+    .fa-lightbulb-o {
+        font-size: rem-calc(54);
+    }
+
+    .fa-credit-card-alt {
+        font-size: rem-calc(35);
+    }
+}
+
+//-----------------------------------------------------------------
+// BLEED RIGHT
+//-----------------------------------------------------------------
+
+.has-bleed {
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+}
+
+.has-bleed .bleed-left-primary,
+.has-bleed .bleed-left-secondary,
+.has-bleed .bleed-right-primary,
+.has-bleed .bleed-right-secondary {
+    @include media-breakpoint-down(sm) {
+        position: relative;
+        // padding-top: $spacer*1.5;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -10%;
+        width: 120%;
+        height: 200%;
+        background: $secondary;
+        z-index: -1;
+    }
+
+    @include media-breakpoint-up(md) {
+        &:after {
+            content: "";
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            width: 100%;
+            height: 200%;
+            background: $secondary;
+            z-index: -1;
+        }
+    }
+}
+
+// LEFT
+
+.has-bleed .bleed-left-primary,
+.has-bleed .bleed-left-secondary {
+    &:after {
+        // left: -10%;
+        // left: auto;
+        // right: 0;
+        // width: 120%;
+        // background: $secondary;
+        // display: none;
+        background-color: green; //rgba($secondary, 0.48);
+    }
+
+    @include media-breakpoint-up(md) {
+        &:after {
+            left: auto;
+            right: 0;
+            width: 100%;
+        }
+    }
+}
+
+.has-bleed .bleed-right-primary {
+    &:after {
+        background: rgba($primary, 0.74);
+    }
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
+//=========================================
+//
+//=========================================

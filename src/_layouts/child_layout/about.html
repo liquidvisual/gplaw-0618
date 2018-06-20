@@ -1,0 +1,67 @@
+---
+layout: base__page
+---
+
+{% assign settings = site.data.settings %}
+{% assign areas_of_practice = site.data.sitemap[3].children %}
+
+<!-- SECTION -->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="lead">
+                    Griffiths Parry Lawyers have been delivering the Sunshine Coast and beyond with strong legal guidance for a wide range of business needs, personal requirements and property transactions.
+                </p>
+
+                <img width="100%" src="/assets/img/content/about.jpg" alt="...">
+            </div>
+            <div class="col-md-8">
+
+                <!-- WYSIWYG -->
+                <div class="wysiwyg">
+                    {{ content }}
+                </div>
+
+                <a href="/our-people/">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <span class="text">Meet our Team</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center">Our Specialist Areas of Practice</h2>
+    </div>
+</section>
+
+<!-- SECTION -->
+<section class="section has-image-bg is-tinted" style="background-image: url(/assets/img/content/meeting.jpg">
+    <div class="container">
+        <ul class="block-grid-md-3">
+            {% for item in areas_of_practice %}
+                <li>
+                    <a href="{{ item.url }}">
+                        <h3>{{ item.title }} <i class="fa fa-angle-right"></i></h3>
+                    </a>
+                    <ul class="list-unstyled">
+                        {% for item in item.children %}
+                            <li>
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{% contentfor content_additional %}
+    {% include components/widgets/google_map.html id="google-map" %}
+{% endcontentfor %}

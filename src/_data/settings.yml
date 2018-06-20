@@ -1,0 +1,33 @@
+# GLOBAL SETTINGS
+cname: gplaw.yourwebvisual.com
+allow_robots: false
+
+# META
+title: Griffiths Parry Lawyers + Notary
+title_homepage: Griffiths Parry Lawyers + Notary | Trusted Sunshine Coast Lawyers
+company: Griffiths Parry Lawyers + Notary
+description: Sunshine Coast Lawyers and Notary. Trusted advice for personal and business law. Conveyancing and property matters. Elder law and compensation law.
+
+# DEVELOPER
+github_repo_owner: liquidvisual
+github_repo_path: https://github.com/liquidvisual/gplaw-0618
+github_repo_name: gplaw-0618
+jekyll_version: 3.7.0
+
+# OFFICES
+offices:
+  - title: Sunshine Coast Office
+    address: Level 2, 12 Innovation Parkway<br> Birtinya QLD 4575
+    phone_1: 1300 GPLAWYERS
+    phone_2: (07) 5390 1400
+    email: info@gplaw.com.au
+
+# GOOGLE
+google_analytics: #UA-XXXXXXXX-X
+
+# AUTHOR
+author:
+  title: Much Media
+  url: http://www.muchmedia.com.au
+  logo: /assets/img/ui/much-media-logo.svg
+  description: Website by Much Media

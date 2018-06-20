@@ -1,0 +1,53 @@
+{% assign settings = site.data.settings %}
+{% assign logo = page.logo | default: "/assets/img/content/logo.png" %}
+
+<!-- HEADER TOP -->
+<div class="global-header-top hidden-sm-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ml-auto text-right">
+
+                <!-- PHONE -->
+                <a href="tel:{{ settings.offices[0].phone_1 }}">
+                    <i class="fa fa-phone"></i>&nbsp;
+                    <span class="text hidden-sm-down">{{ settings.offices[0].phone_1 }}</span>
+                </a>
+
+                <!-- EMAIL -->
+                <a class="hidden-sm-down" href="mailto:{{ settings.offices[0].email }}">
+                    <i class="fa fa-envelope"></i>&nbsp;  {{ settings.offices[0].email }}
+                </a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HEADER BODY -->
+<div class="global-header-body">
+    <div class="container">
+
+        <!-- LOGO -->
+        <a class="logo" href="/" title="{{ settings.title_homepage }}" itemprop="url">
+            <img src="{{ logo }}" alt="{{ settings.company }}" itemprop="logo">
+        </a>
+
+        <!-- HAMBURGER -->
+        <div class="global-header-hamburger hidden-xl-up">
+            <div class="lv-hamburger" data-menu-toggle>
+                <span class="lv-hamburger-top"></span>
+                <span class="lv-hamburger-middle"></span>
+                <span class="lv-hamburger-bottom"></span>
+                <span class="lv-hamburger-hit"></span>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="global-navigation hidden-lg-down">
+            <div class="lv-topbar">
+                {% include components/navigation/navigation.html %}
+            </div>
+        </nav>
+
+    </div>
+</div>

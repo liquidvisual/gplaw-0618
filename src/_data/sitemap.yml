@@ -1,0 +1,109 @@
+- title: Home
+  url: /
+
+- title: About
+  url: /about/
+
+- title: Our Team
+  url: /our-team/
+  include_children_in_nav: false
+  children:
+    - title: Our Team Item
+      url: /our-team/our-team-item/
+
+- title: Areas of Practice
+  url: /areas-of-practice/
+  include_children_in_nav: true
+  children:
+    - title: Business Law
+      url: /areas-of-practice/business-law/
+      include_children_in_nav: false
+      children:
+        - title: Business Sales and Purchases
+          url:
+        - title: Business Structures / Asset Protection
+          url:
+        - title: Franchising
+          url:
+        - title: Commercial Agreements
+          url:
+        - title: Intellectual Property
+          url:
+        - title: General Business / Legal Requirements
+          url:
+
+    - title: Property Law
+      url: /areas-of-practice/business-law/
+      include_children_in_nav: false
+      children:
+        - title: Convenyancing (Commercial & Industrial)
+          url:
+        - title: Convenyancing (Houses, Land & Units)
+          url:
+        - title: Development (Subdivision & Community Title Schemes)
+          url:
+        - title: Leasing (Commercial & Retail)
+          url:
+        - title: Motels, Hotels, Caravan Parks
+          url:
+        - title: Retirement Villages
+          url:
+
+    - title: Family Law
+      url: /areas-of-practice/business-law/
+      include_children_in_nav: false
+      children:
+        - title: Separation and Divorce
+          url:
+        - title: Spousal Maintenance
+          url:
+        - title: Parent Arrangements & Relocations
+          url:
+        - title: Child Support
+          url:
+        - title: Finance Arrangements (Pre-nuptials)
+          url:
+        - title: Domestic Violence
+          url:
+        - title: Property Settlement
+          url:
+        - title: De Facto Relationship
+          url:
+        - title: Civil Partnerships
+          url:
+
+    - title: Wills, Deceased Estates
+      url: /areas-of-practice/business-law/
+      include_children_in_nav: false
+      children:
+        - title: Personal Injury
+          url:
+        - title: Estate Disputes
+          url:
+        - title: Wills and Power of Attorney
+          url:
+        - title: Estate Planning
+          url:
+        - title: Estate Administration
+          url:
+        - title: Trusts and Superannuation Funds
+          url:
+        - title: Super Fund Binding Nominations
+          url:
+
+    - title: Compensation Law
+      url: /areas-of-practice/business-law/
+      include_children_in_nav: false
+      children:
+        - title: Workplace Injury
+          url:
+        - title: Motor Vehicle Accidents
+          url:
+        - title: Public Liability Claims
+          url:
+
+- title: Articles
+  url: /articles/
+
+- title: Contact
+  url: /contact/
