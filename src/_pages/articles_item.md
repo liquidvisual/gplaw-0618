@@ -3,8 +3,10 @@ layout: child_layout/articles_item
 title: The Trick to Creating Delicious Meals on the Go
 title_override: Articles
 permalink: /articles/articles-item/
-bg_image: /assets/img/content/meeting.jpg
+bg_image: /assets/img/content/hero/hero-articles.jpg
+hero_options: is-short
 breadcrumbs: true
+breadcrumbs_text: 'Back'
 ---
 
 <p class="lead dropcap">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

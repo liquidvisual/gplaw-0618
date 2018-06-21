@@ -8,12 +8,34 @@
 // VARIABLES
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// BOOTSTRAP OVERRIDE
+// BUTTON CTA
 //-----------------------------------------------------------------
 
-// fuck right off Bootstrap
-b, strong {
-    font-weight: $font-weight-bold;
+.btn-cta {
+    font-size: rem-calc(20);
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase; // should this apply to all buttons?
+    color: $secondary;
+
+    i {
+        font-size: rem-calc(35);
+        margin-right: rem-calc(10);
+    }
+
+    .fa-angle-right {
+        margin-left: rem-calc(10);
+        font-size: rem-calc(28);
+        color: rgba($secondary, 0.2);
+        transition: color 250ms ease;
+    }
+
+    &:hover {
+        color: $primary;
+
+        .fa-angle-right {
+            color: rgba($secondary, 0.4);
+        }
+    }
 }
 
 //-----------------------------------------------------------------

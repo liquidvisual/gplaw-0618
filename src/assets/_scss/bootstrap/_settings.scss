@@ -273,7 +273,7 @@ $font-family-sans-serif:      "Proxima Nova", -apple-system, BlinkMacSystemFont,
 // $font-size-sm:                ($font-size-base * .875) !default;
 
 // $font-weight-light:           300 !default;
-$font-weight-normal:          600 !default;
+$font-weight-normal:          400 !default;
 $font-weight-semibold:        600 !default; // LV added
 $font-weight-bold:            800 !default;
 
@@ -300,12 +300,7 @@ $headings-font-weight:        $font-weight-semibold; //500 !default;
 // $headings-line-height:        1.2 !default;
 // $headings-color:              inherit !default;
 
-$display1-size:               rem-calc(54) !default; //6rem !default;
-// $display2-size:               5.5rem !default;
-// $display3-size:               4.5rem !default;
-// $display4-size:               3.5rem !default;
-
-// $display1-size: rem-calc(53); // [LOCKED]  66
+$display1-size: rem-calc(54); // [LOCKED]  66
 // $display2-size: rem-calc(53); // [LOCKED]  53
 // $display3-size: rem-calc(53);
 // $display4-size: rem-calc(53);
@@ -885,7 +880,7 @@ $card-inner-border-radius:          0; //calc(#{$card-border-radius} - #{$card-b
 
 // // Breadcrumbs
 
-// $breadcrumb-padding-y:              .75rem !default;
+$breadcrumb-padding-y:              0; //.75rem !default;
 // $breadcrumb-padding-x:              1rem !default;
 // $breadcrumb-item-padding:           .5rem !default;
 

@@ -11,9 +11,17 @@
 // BREADCRUMBS
 //-----------------------------------------------------------------
 
-.lv-breadcrumb-wrapper {
-    background: #f7f7f9;
-    // border-bottom: 1px solid #e5e5e5;
+.breadcrumb {
+	margin-bottom: rem-calc(5);
+
+    .breadcrumb-item {
+    	text-transform: uppercase;
+    	color: white;
+
+    	&:hover {
+    		opacity: 0.8;
+    	}
+    }
 }
 
 //=========================================

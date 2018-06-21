@@ -9,25 +9,33 @@ layout: base__page
 <section class="section">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <p class="lead">
+            <div class="col-md-5">
+
+                <!-- LEAD -->
+                <p class="h2 font-weight-normal mb-4 mb-md-5">
                     Griffiths Parry Lawyers have been delivering the Sunshine Coast and beyond with strong legal guidance for a wide range of business needs, personal requirements and property transactions.
                 </p>
 
-                <img width="100%" src="/assets/img/content/about.jpg" alt="...">
+                <!-- IMAGE -->
+                <p class="mb-4"><img width="100%" src="/assets/img/content/about.jpg" alt="Griffiths Parry Lawyers"></p>
+
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
+                <div class="pl-md-4">
 
-                <!-- WYSIWYG -->
-                <div class="wysiwyg">
-                    {{ content }}
+                    <!-- WYSIWYG -->
+                    <div class="wysiwyg mb-4">
+                        {{ content }}
+                    </div>
+
+                    <!-- BUTTON CTA -->
+                    <a class="btn btn-cta" href="/our-people/">
+                        <i class="fa fa-user-circle"></i>
+                        <span class="text">Meet our Team</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+
                 </div>
-
-                <a href="/our-people/">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    <span class="text">Meet our Team</span>
-                </a>
-
             </div>
         </div>
     </div>
@@ -62,6 +70,4 @@ layout: base__page
     </div>
 </section>
 
-{% contentfor content_additional %}
-    {% include components/widgets/google_map.html id="google-map" %}
-{% endcontentfor %}
+<!-- { % include app/contact.html %} -->

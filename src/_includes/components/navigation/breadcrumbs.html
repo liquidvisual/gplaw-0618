@@ -2,29 +2,27 @@
 <!--
     BREADCRUMBS
 
-    updated: 07.05.18
+    updated: 21.06.18
     liquidvisual.com
 -->
 {% endcomment %}
 
 {% assign crumbs = page.url | split: '/' %}
+{% assign breadcrumbs_text = page.breadcrumbs_text %}
 
 <!-- BREADCRUMBS -->
-<section class="lv-breadcrumb-wrapper {{ include.theme }}">
-    <div class="container">
-        <nav class="breadcrumb px-0">
-
-            <!-- CRUMBS -->
-            {% for crumb in crumbs offset: 1 %}
-                {% unless forloop.last %}
-                    <a class="breadcrumb-item"
-                        href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
-                        <i class="fa fa-arrow-circle-left"></i>&nbsp;
-                        <span class="hidden-sm-down">Back to</span> {{ crumb | capitalize | replace:'-',' ' }}
-                    </a>
-                {% endunless %}
-            {% endfor %}
-
-        </nav>
-    </div>
-</section>
+<nav class="breadcrumb px-0">
+    {% for crumb in crumbs offset: 1 %}
+        {% unless forloop.last %}
+            <a class="breadcrumb-item"
+                href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+                <i class="fa fa-angle-left"></i>&nbsp;
+                {% if breadcrumbs_text %}
+                    Back
+                {% else %}
+                    {{ crumb | capitalize | replace:'-',' ' }}
+                {% endif %}
+            </a>
+        {% endunless %}
+    {% endfor %}
+</nav>

@@ -1,6 +1,6 @@
 ---
-layout: child_layout/about
+layout: child_layout/areas_of_practice
 title: Areas of Practice
 permalink: /areas-of-practice/
-bg_image: /assets/img/content/hero/hero-about.jpg
+bg_image: /assets/img/content/hero/hero-5.jpg
 ---

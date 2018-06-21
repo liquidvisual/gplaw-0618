@@ -27,13 +27,13 @@ $hero-height-presets: (
     ),
     is-static: (
         xs: rem-calc(200),
-        md: rem-calc(320),
+        md: 256px, //rem-calc(320),
         lg: 256px, //rem-calc(600),
         xl: rem-calc(485),
     ),
     is-short: (
         xs: rem-calc(200),
-        md: rem-calc(320),
+        md: 256px,
         lg: 256px, //rem-calc(600),
         xl: rem-calc(256),
     ),
@@ -129,6 +129,14 @@ $hero-height-presets: (
         height: 100%;
         min-height: 0;
         padding: 0;
+    }
+
+    .lv-hero-item-caption { // psd
+        user-select: none;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: rem-calc(40);
+        }
     }
 }
 

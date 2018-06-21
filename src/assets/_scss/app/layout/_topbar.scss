@@ -29,7 +29,7 @@
     margin: 0;  // [RESET]
     list-style: none; // [RESET]
     font-family: $headings-font-family;
-    font-size: rem-calc(16);
+    // font-size: rem-calc(16);
 }
 
 //=========================================
@@ -52,7 +52,7 @@
 .lv-topbar a {
     display: block; // [LOCKED]
     text-decoration: none; // [LOCKED]
-    font-weight: 400; //$font-weight-semibold; // [LOCKED]
+    font-weight: $font-weight-normal; // [LOCKED]
     text-transform: uppercase;
 }
 
@@ -80,7 +80,7 @@
     // background: rgba(white, 0.15);
 
     .text {
-        padding-bottom: 6px;
+        padding-bottom: 4px;
         border-bottom: 2px solid $secondary; // [THEMEABLE]
     }
 }
@@ -154,9 +154,11 @@
     position: relative;
 
     a {
-        padding: rem-calc(15 20);
+        padding: rem-calc(10 20);
+        border-bottom: 1px solid #e6e6e6;
         font-size: rem-calc(14); // opinionated
         color: #444;
+        text-transform: none;
         transition: none; // [LOCKED]
 
         &:hover {

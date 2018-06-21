@@ -11,6 +11,7 @@
 {% assign id = include.id %}
 {% assign options = include.options %}
 {% assign bg_image = page.bg_image %}
+{% assign breadcrumbs = page.breadcrumbs %}
 
 <!-- HERO WRAPPER -->
 <section id="{{ id }}" class="lv-hero-wrapper">
@@ -23,7 +24,12 @@
 
             <!-- HERO CAPTION -->
             <div class="container">
-                <div class="lv-hero-item-caption animated fadeInLeftSubtle fadeInUpSubtleX">
+                <div class="lv-hero-item-caption animated fadeInLeftSubtle">
+
+                    {% if breadcrumbs %}
+                        {% include components/navigation/breadcrumbs.html %}
+                    {% endif %}
+
                     {% if page.title_override %}
                         <h2 class="display-1">{{ page.title_override }}</h2>
                     {% else %}

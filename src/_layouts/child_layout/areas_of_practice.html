@@ -1,0 +1,42 @@
+---
+layout: base__page
+---
+
+{% assign settings = site.data.settings %}
+{% assign areas_of_practice = site.data.sitemap[3].children %}
+
+<!-- SECTION -->
+<section class="section fill-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 pr-md-5">
+                <p class="lead">
+                    Beyond genuine expertise, we pride ourselves on our approachable and easy to deal with nature. We know you want the expertise to deliver outstanding results. You also want lawyers who can talk to you in plain English, to effectively communicate your options and genuinely understand your needs.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION -->
+<section class="section has-image-bg is-tinted" style="background-image: url(/assets/img/content/meeting.jpg">
+    <div class="container">
+        <ul class="block-grid-md-3">
+            {% for item in areas_of_practice %}
+                <li>
+                    <a class="fill-4 d-block p-3" href="{{ item.url }}">
+                        <h3>{{ item.title }} <i class="fa fa-angle-right"></i></h3>
+
+                        <p>At Griffiths Parry Lawyers and Notary, our clients are provided with clear, effective advice tailored to their specific business needs and goals.</p>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{% include app/latest_articles.html %}
+
+{% contentfor content_additional %}
+    {% include components/widgets/google_map.html id="google-map" %}
+{% endcontentfor %}

@@ -6,6 +6,7 @@ permalink: /our-team/our-team-item/
 bg_image: /assets/img/content/meeting.jpg
 hero_options: is-short
 breadcrumbs: true
+breadcrumbs_text: 'Back'
 ---
 
 Tracy has practiced as a solicitor in the areas of family law, estate and commercial litigation since 2000.  In the last decade or so Tracy has specialised in family law, developing extensive experience in:
