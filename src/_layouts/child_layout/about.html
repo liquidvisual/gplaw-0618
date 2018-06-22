@@ -41,26 +41,34 @@ layout: base__page
     </div>
 </section>
 
-<!-- SECTION -->
-<section class="section">
-    <div class="container">
-        <h2 class="text-center">Our Specialist Areas of Practice</h2>
-    </div>
-</section>
+<h4 class="text-center">TODO: BG OPACITY, PADDING-Y, ARROWS GREY</h4>
 
 <!-- SECTION -->
-<section class="section has-image-bg is-tinted" style="background-image: url(/assets/img/content/meeting.jpg">
+<section class="section is-tinted has-image-bg" style="background-image: url(/assets/img/content/meeting.jpg">
+
+    <!-- HEADER -->
+    <h2 class="spec-header text-uppercase text-center">
+        <div class="container">
+            Our Specialist Areas of Practice
+        </div>
+    </h2>
+
+    <div class="spacer py-5">-</div>
+
+    <!-- BODY -->
     <div class="container">
         <ul class="block-grid-md-3">
             {% for item in areas_of_practice %}
                 <li>
-                    <a href="{{ item.url }}">
+                    <a class="text-light" href="{{ item.url }}">
                         <h3>{{ item.title }} <i class="fa fa-angle-right"></i></h3>
                     </a>
                     <ul class="list-unstyled">
                         {% for item in item.children %}
                             <li>
-                                <a href="{{ item.url }}">{{ item.title }}</a>
+                                <a class="d-flex text-light font-weight-normal" href="{{ item.url }}">
+                                    &nbsp;<span>- </span>&nbsp;<span>{{ item.title }}</span>
+                                </a>
                             </li>
                         {% endfor %}
                     </ul>

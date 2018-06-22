@@ -17,10 +17,12 @@ jekyll_version: 3.7.0
 # OFFICES
 offices:
   - title: Sunshine Coast Office
-    address: Level 2, 12 Innovation Parkway<br> Birtinya QLD 4575
+    address: Level 2, Innovation Parkway<br> Birtinya QLD 4575
     phone_1: 1300 GPLAWYERS
     phone_2: (07) 5390 1400
+    fax: (07) 5390 1499
     email: info@gplaw.com.au
+    po_box: PO Box 1515<br> Buddina QLD 4575
 
 # GOOGLE
 google_analytics: #UA-XXXXXXXX-X

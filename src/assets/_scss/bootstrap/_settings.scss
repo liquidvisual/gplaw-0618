@@ -232,7 +232,7 @@ body {
 // // Set the number of columns and specify the width of the gutters.
 
 // $grid-columns:                12 !default;
-// $grid-gutter-width:           30px !default;
+// $grid-gutter-width:           46px; //30px !default;
 
 // // Components
 // //
@@ -367,8 +367,8 @@ $table-border-color:          darken(#dfe2e5, 15%); //$gray-300 !default;
 // //
 // // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-// $input-btn-padding-y:         .375rem !default;
-// $input-btn-padding-x:         .75rem !default;
+$input-btn-padding-y:         rem-calc(13); //.375rem !default;
+$input-btn-padding-x:         rem-calc(20); //.75rem !default;
 // $input-btn-line-height:       $line-height-base !default;
 
 // $input-btn-focus-width:       .2rem !default;
@@ -390,8 +390,8 @@ $table-border-color:          darken(#dfe2e5, 15%); //$gray-300 !default;
 // //
 // // For each of Bootstrap's buttons, define text, background, and border color.
 
-// $btn-padding-y:               $input-btn-padding-y !default;
-// $btn-padding-x:               $input-btn-padding-x !default;
+$btn-padding-y:               rem-calc(14); //$input-btn-padding-y !default;
+$btn-padding-x:               rem-calc(30); //$input-btn-padding-x !default;
 // $btn-line-height:             $input-btn-line-height !default;
 
 // $btn-padding-y-sm:            $input-btn-padding-y-sm !default;
@@ -404,11 +404,15 @@ $table-border-color:          darken(#dfe2e5, 15%); //$gray-300 !default;
 
 // $btn-border-width:            $input-btn-border-width !default;
 
-// $btn-font-weight:             $font-weight-normal !default;
+$btn-font-weight:             $font-weight-semibold; //$font-weight-normal !default;
 // $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 // $btn-focus-width:             $input-btn-focus-width !default;
 // $btn-focus-box-shadow:        $input-btn-focus-box-shadow !default;
-// $btn-disabled-opacity:        .65 !default;
+$btn-disabled-opacity:        1; //.65 !default;
+
+.btn.disabled {
+  cursor: pointer;
+}
 // $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;
 
 // $btn-link-disabled-color:     $gray-600 !default;
@@ -445,7 +449,7 @@ $btn-border-radius-sm:       0; // $border-radius-sm !default;
 // $input-border-width:                    $input-btn-border-width !default;
 // $input-box-shadow:                      inset 0 1px 1px rgba($black, .075) !default;       //2px 2px 3px 3px yellow; //
 
-// $input-border-radius:                   $border-radius !default;
+$input-border-radius:                   0; //$border-radius !default;
 // $input-border-radius-lg:                $border-radius-lg !default;
 // $input-border-radius-sm:                $border-radius-sm !default;
 

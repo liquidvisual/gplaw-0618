@@ -47,7 +47,9 @@ b, strong {
 // LEAD
 //-----------------------------------------------------------------
 
-p.lead {
+.lead {
+    color: hotpink;
+
     @include media-breakpoint-down(sm) {
         font-size: rem-calc(17); // [LOCKED] - curated
     }

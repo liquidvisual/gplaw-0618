@@ -2,7 +2,7 @@
 layout: child_layout/our_team_item
 title: Tracy Price
 title_override: Our Team
-permalink: /our-team/our-team-item/
+permalink: /our-team/tracy-price/
 bg_image: /assets/img/content/meeting.jpg
 hero_options: is-short
 breadcrumbs: true

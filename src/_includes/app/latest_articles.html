@@ -1,12 +1,19 @@
+{% assign posts = site.data.lorem_ipsum %}
 {% assign title = include.title | default: "Latest Articles" %}
 
 <!-- LATEST ARTICLES -->
 <section class="section">
 	<div class="container">
 
-		<h2 class="text-center mb-4">{{ title }}</h2>
+		<h2 class="text-uppercase text-center mb-4">{{ title }}</h2>
 
-		{% include components/cards/cards.html flat=true %}
+		<div class="row">
+			{% for item in posts | limit: 4 %}
+				<div class="col-md-6 col-lg-3 mb-4">
+					{% include components/cards/card.html flat=true %}
+				</div>
+			{% endfor %}
+		</div>
 
 		<!-- MORE BUTTON -->
 		<p class="text-center">

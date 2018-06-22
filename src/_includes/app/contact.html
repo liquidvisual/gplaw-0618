@@ -1,32 +1,30 @@
 {% assign settings = site.data.settings %}
 
 <!-- CONTACT -->
-<section class="section has-image-bg is-tinted section-contact" style="background-image: url('/assets/img/content/hero/bg-2.jpg')">
+<section class="section is-dark has-image-bg is-tinted section-contact" style="background-image: url('/assets/img/content/hero/bg-2.jpg')">
 	<div class="container text-md-center">
 		<div class="row justify-content-center">
 			<div class="col-lg-10 col-xl-8">
 
-				<h2 class="text-center">Speak to one of our experts</h2>
+				<h2 class="text-uppercase text-center">Speak to one of our experts</h2>
 				<br>
 
-		        <a class="h4 mr-3 subheader" href="tel:{{ settings.offices[0].phone_1 }}" title="{{ settings.offices[0].title }}">
-		            <i class="fa fa-phone"></i>&nbsp;<span class="text">{{ settings.offices[0].phone_1 }}</span>
+		        <a class="h4 font-weight-normal mr-4" href="tel:{{ settings.offices[0].phone_1 }}" title="{{ settings.offices[0].title }}">
+		            <i class="fa fa-phone"></i>&nbsp;
+		            <span class="text">
+		            	{{ settings.offices[0].phone_1 }} or {{ settings.offices[0].phone_2 }}
+		        	</span>
 		        </a>
 
 		        <br class="hidden-md-up">
 
-		        <a class="h4 mr-3 subheader" href="tel:{{ settings.offices[1].phone }}" title="{{ settings.offices[1].title }}">
-		            <i class="fa fa-phone"></i>&nbsp;<span class="text">{{ settings.offices[1].phone }}</span>
-		        </a>
-
-		        <br class="hidden-md-up">
-
-		        <a class="h4 subheader" href="mailto:{{ settings.offices[0].email }}">
+		        <a class="h4 font-weight-normal" href="mailto:{{ settings.offices[0].email }}">
 		            <i class="fa fa-envelope"></i>&nbsp;<span class="text">{{ settings.offices[0].email }}</span>
 		        </a>
 
 				<hr>
-				<p class="lead">or fill out the form below...</p>
+
+				<p class="lead">Or fill out the form below to request a callback...</p>
 				<br>
 				<div class="row justify-content-center">
 					<div class="col-md-9 col-lg-8">

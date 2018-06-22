@@ -7,11 +7,84 @@
 //-----------------------------------------------------------------
 // VARIABLES
 //-----------------------------------------------------------------
+
+.btn {
+    font-size: rem-calc(15);
+    text-transform: uppercase;
+    min-width: rem-calc(208);
+
+    .fa-angle-right {
+        position: relative;
+        left: rem-calc(10);
+        margin-left: auto;
+        font-size: rem-calc(26);
+    }
+}
+
 //-----------------------------------------------------------------
-// BUTTON CTA
+// BTN SPEC TILE - used on practice areas
+//-----------------------------------------------------------------
+
+.btn-spec-tile {
+    display: block;
+    padding: rem-calc(30);
+    background: $primary;
+    font-weight: $font-weight-normal;
+    color: white;
+
+    .fa-angle-right {
+        position: relative;
+        top: rem-calc(3);
+        margin-left: rem-calc(5);
+        font-size: rem-calc(44);
+        color: rgba(white, 0.5);
+        line-height: 0;
+        display: inline;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: rem-calc(35);
+        margin-bottom: rem-calc(44);
+    }
+
+    &:hover {
+        color: white;
+        background: lighten($primary, 3%);
+    }
+}
+
+//-----------------------------------------------------------------
+// BUTTON HEADER - used for practices
+//-----------------------------------------------------------------
+
+.btn-header {
+    display: inline-block;
+    margin-bottom: rem-calc(15);
+    color: white;
+
+    .fa-angle-right {
+        // font-size: rem-calc(25);
+        color: #9396a0;
+        margin-left: rem-calc(4);
+    }
+
+    &.active {
+        padding-bottom: rem-calc(2);
+        border-bottom: 2px solid #9396a0;
+    }
+
+    &:hover {
+        color: rgba(white, 0.7);
+    }
+}
+
+//-----------------------------------------------------------------
+// BUTTON CTA - text btns, used on about etc
 //-----------------------------------------------------------------
 
 .btn-cta {
+    padding-left: 0;
+    padding-right: 0; // override btn
     font-size: rem-calc(20);
     font-weight: $font-weight-semibold;
     text-transform: uppercase; // should this apply to all buttons?
@@ -23,7 +96,7 @@
     }
 
     .fa-angle-right {
-        margin-left: rem-calc(10);
+        margin-left: rem-calc(4);
         font-size: rem-calc(28);
         color: rgba($secondary, 0.2);
         transition: color 250ms ease;
@@ -33,7 +106,24 @@
         color: $primary;
 
         .fa-angle-right {
-            color: rgba($secondary, 0.4);
+            // color: rgba($secondary, 0.4);
+            color: $primary;
+        }
+    }
+}
+
+.is-dark .btn-cta {
+    color: white;
+
+    .fa-angle-right {
+        color: rgba(white, 0.2);
+    }
+
+    &:hover {
+        color: $primary;
+
+        .fa-angle-right {
+            color: $primary;
         }
     }
 }

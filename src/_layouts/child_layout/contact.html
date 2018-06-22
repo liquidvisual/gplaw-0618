@@ -5,13 +5,20 @@ layout: base__page_sidebar
 {% assign settings = site.data.settings %}
 
 <!-- SECTION -->
-<section class="section">
+<section class="section section-content">
     <div class="container">
+
+        <!-- HEADING -->
+        <h2>Need help? Make an enquiry now</h2>
+
+        <!-- WYSIWYG -->
+        <div class="wysiwyg mb-4">
+            <p>Fill out the form below to receive a free and confidential initial consultation.</p>
+        </div>
+
         {% include app/form_contact.html %}
     </div>
 </section>
-
-
 
 {% contentfor sidebar %}
 
@@ -29,8 +36,6 @@ layout: base__page_sidebar
                 {{ settings.offices[0].address }}<br>
                 <a href="mailto:settings.offices[0].email">{{ settings.offices[0].email }}</a>
             </p>
-            <br>
-            <p><a href="#google-map" class="btn btn-primary">Directions&nbsp; <i class="fa fa-external-link"></i></a></p>
             <br>
 
             <!-- WYSIWYG -->

@@ -20,6 +20,7 @@
 
 	a {
 		color: white; // [THEMEABLE]
+		font-weight: $font-weight-normal;
 
 		&:hover {
 			opacity: 0.85;

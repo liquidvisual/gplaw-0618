@@ -42,6 +42,27 @@ form[data-toggle="validator"] .has-error > .error {
 }
 
 //-----------------------------------------------------------------
+// PLACEHOLDER
+//-----------------------------------------------------------------
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	text-transform: uppercase;
+	color: #cdcdcd !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	text-transform: uppercase;
+	color: #cdcdcd !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	text-transform: uppercase;
+	color: #cdcdcd !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+	text-transform: uppercase;
+	color: #cdcdcd !important;
+}
+
+//-----------------------------------------------------------------
 // ASTERISK
 //-----------------------------------------------------------------
 

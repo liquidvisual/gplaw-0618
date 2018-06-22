@@ -30,6 +30,8 @@
 //-----------------------------------------------------------------
 
 .main-body {
+	overflow: hidden;
+
 	@include media-breakpoint-down(md) {
 		> .container {
 		    max-width: none;

@@ -9,7 +9,7 @@
   include_children_in_nav: false
   children:
     - title: Our Team Item
-      url: /our-team/our-team-item/
+      url: /our-team/tracy-price/
 
 - title: Areas of Practice
   url: /areas-of-practice/
@@ -19,88 +19,90 @@
       url: /areas-of-practice/business-law/
       include_children_in_nav: false
       children:
+        - title: Commercial Litigation
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Business Sales and Purchases
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Business Structures / Asset Protection
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Franchising
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Commercial Agreements
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Intellectual Property
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: General Business / Legal Requirements
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
 
     - title: Property Law
       url: /areas-of-practice/business-law/
       include_children_in_nav: false
       children:
         - title: Convenyancing (Commercial & Industrial)
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Convenyancing (Houses, Land & Units)
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Development (Subdivision & Community Title Schemes)
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Leasing (Commercial & Retail)
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Motels, Hotels, Caravan Parks
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Retirement Villages
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
 
     - title: Family Law
       url: /areas-of-practice/business-law/
       include_children_in_nav: false
       children:
         - title: Separation and Divorce
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Spousal Maintenance
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Parent Arrangements & Relocations
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Child Support
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Finance Arrangements (Pre-nuptials)
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Domestic Violence
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Property Settlement
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: De Facto Relationship
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Civil Partnerships
-          url:
-
-    - title: Wills, Deceased Estates
-      url: /areas-of-practice/business-law/
-      include_children_in_nav: false
-      children:
-        - title: Personal Injury
-          url:
-        - title: Estate Disputes
-          url:
-        - title: Wills and Power of Attorney
-          url:
-        - title: Estate Planning
-          url:
-        - title: Estate Administration
-          url:
-        - title: Trusts and Superannuation Funds
-          url:
-        - title: Super Fund Binding Nominations
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
 
     - title: Compensation Law
       url: /areas-of-practice/business-law/
       include_children_in_nav: false
       children:
         - title: Workplace Injury
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Motor Vehicle Accidents
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
         - title: Public Liability Claims
-          url:
+          url: /areas-of-practice/business-law/commercial-litigation/
+
+    - title: Wills, Deceased Estates
+      url: /areas-of-practice/business-law/
+      include_children_in_nav: false
+      children:
+        - title: Personal Injury
+          url: /areas-of-practice/business-law/commercial-litigation/
+        - title: Estate Disputes
+          url: /areas-of-practice/business-law/commercial-litigation/
+        - title: Wills and Power of Attorney
+          url: /areas-of-practice/business-law/commercial-litigation/
+        - title: Estate Planning
+          url: /areas-of-practice/business-law/commercial-litigation/
+        - title: Estate Administration
+          url: /areas-of-practice/business-law/commercial-litigation/
+        - title: Trusts and Superannuation Funds
+          url: /areas-of-practice/business-law/commercial-litigation/
+        - title: Super Fund Binding Nominations
+          url: /areas-of-practice/business-law/commercial-litigation/
 
 - title: Articles
   url: /articles/

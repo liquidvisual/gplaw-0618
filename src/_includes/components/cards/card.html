@@ -24,15 +24,15 @@
 		</a>
 
 		<!-- DATE -->
-		<p><time class="text-muted" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date }}</time></a></p>
+		<p><time class="text-datetime" datetime="{{ item.date | date_to_xmlschema }}">{{ item.date }}</time></a></p>
 
 		<!-- TEXT -->
-		<div class="card-text">
+		<div class="card-text mb-1">
 			{{ item.body | truncate: 150 }}
 		</div>
 
 		<!-- BUTTON -->
-		<p><a href="{{ item.url }}" class="font-weight-semibold">Read more <i class="fa fa-angle-right"></i></a></p>
+		<p><a href="{{ item.url }}" class="read-more text-uppercase font-weight-semibold">Read more <i class="fa fa-angle-right"></i></a></p>
 
 	</div>
 </div>

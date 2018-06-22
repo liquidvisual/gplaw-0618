@@ -20,7 +20,22 @@
     	.card-body {
     		padding: rem-calc(30 15 0 0);
     	}
+    }
 
+    .text-datetime {
+        font-size: rem-calc(15);
+        font-weight: $font-weight-semibold;
+        color: #cdcbcb;
+        text-transform: uppercase;
+    }
+
+    .card-title {
+        font-size: rem-calc(23); // cheating
+        color: $secondary;
+    }
+
+    .read-more {
+        font-size: rem-calc(15);
     }
 }
 

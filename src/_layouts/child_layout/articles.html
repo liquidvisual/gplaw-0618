@@ -3,20 +3,28 @@ layout: base__page
 ---
 
 {% assign settings = site.data.settings %}
+{% assign posts = site.data.lorem_ipsum %}
 
 <!-- BLOG POSTS -->
 <section class="section">
     <div class="container">
+
         <div class="row">
-            {% for item in site.data.lorem_ipsum | limit: 6 %}
-                <div class="col-md-6 col-lg-4 mb-5">
+            {% for item in posts | limit: 6 %}
+                <div class="col-md-6 col-lg-4 mb-3">
                     {% include components/cards/card.html flat=true %}
                 </div>
             {% endfor %}
         </div>
 
+        <div class="spacer mb-4"></div>
+
         {% include components/navigation/pagination.html %}
     </div>
 </section>
+
+
+
+
 
 

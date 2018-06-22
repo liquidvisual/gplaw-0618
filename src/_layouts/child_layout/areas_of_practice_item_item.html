@@ -1,0 +1,41 @@
+---
+layout: base__page_sidebar
+---
+
+{% assign areas_of_practice_sub_items = site.data.sitemap[3].children[0].children %}
+
+<!-- SECTION -->
+<section class="section section-content pb-0 pb-lg-5">
+    <div class="container">
+
+        <!-- TITLE -->
+        <h1 class="text-uppercase">{{ page.title }}</h1>
+
+        <!-- LEAD -->
+        <p class="lead mb-4">
+            {{ page.lead }}
+        </p>
+
+        <!-- WYSIWYG -->
+        <div class="wysiwyg mb-5">
+            {{ content | markdownify }}
+        </div>
+
+    </div>
+</section>
+
+{% contentfor sidebar %}
+    <section class="section">
+        <div class="container">
+            {% for item in areas_of_practice_sub_items %}
+                <a class="btn-header {% if forloop.first %}active{% endif %}" href="{{ item.url }}">
+                    <h5 class="text-uppercase mb-0">{{ item.title }} <i class="fa fa-angle-right"></i></h5>
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+{% endcontentfor %}
+
+{% contentfor content_additional %}
+    {% include app/contact.html %}
+{% endcontentfor %}
