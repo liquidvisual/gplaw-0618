@@ -5295,6 +5295,30 @@ function launchGallery() {
   }(), t("html[development]").length && (i(), t(window).resize(function () {
     i();
   }));
+}(jQuery), function (t) {
+  "use strict";
+  var e = t("[data-match-height]"),
+      n = function n(_n3) {
+    if (t(window).width() >= 768) {
+      var i,
+          o = 0,
+          r = 0,
+          s = [],
+          a = 0;t(_n3).each(function () {
+        if (i = t(this), t(i).height("auto"), a = i.position().top, r != a) {
+          for (var e = 0; e < s.length; e++) {
+            s[e].height(o);
+          }s.length = 0, r = a, o = i.height(), s.push(i);
+        } else s.push(i), o = o < i.height() ? i.height() : o;for (e = 0; e < s.length; e++) {
+          s[e].height(o);
+        }
+      });
+    } else e.height("auto");
+  };t(window).on("load", function () {
+    n(e);
+  }), t(window).resize(function () {
+    n(e);
+  });
 }(jQuery), launchGallery(), launchSlider(), function (t) {
   "use strict";
   var e = t("html"),
@@ -5323,8 +5347,6 @@ function launchGallery() {
   $("[data-search]").addClass("is-hidden"), document.activeElement.blur();
 }), $(window).on("load", function () {
   $("html").addClass("has-loaded");
-}), $(function () {
-  $('[data-toggle="tooltip"]').tooltip();
 }), $('a[href*="#"]:not([href="#"], [href="#sitemap"], [data-toggle="tab"])').click(function () {
   var t = $(this).attr("href"),
       e = $(t);e.length && $.scrollTo(e.offset().top - 50, 500);
