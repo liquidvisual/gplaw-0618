@@ -12,7 +12,7 @@ layout: base__page
         <div class="row">
             {% for item in posts | limit: 6 %}
                 <div class="col-md-6 col-lg-4 mb-3">
-                    {% include components/cards/card.html flat=true %}
+                    {% include app/card.html flat=true %}
                 </div>
             {% endfor %}
         </div>

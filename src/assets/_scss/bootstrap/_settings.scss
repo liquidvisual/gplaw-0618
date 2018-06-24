@@ -220,7 +220,7 @@ $container-max-widths: (
 //--------------------------------------------------------------------
 
 body {
-  content: "#{map-get($grid-breakpoints, xs)}|#{map-get($grid-breakpoints, sm)}|#{map-get($grid-breakpoints, md)}|#{map-get($grid-breakpoints, lg)}|#{map-get($grid-breakpoints, xl)}";
+  content: "#{map-get($grid-breakpoints, xs)}|#{map-get($grid-breakpoints, sm)}|#{map-get($grid-breakpoints, md)}|#{map-get($grid-breakpoints, lg)}|#{map-get($grid-breakpoints, xl)}|#{map-get($grid-breakpoints, xxl)}";
 }
 
 //--------------------------------------------------------------------
