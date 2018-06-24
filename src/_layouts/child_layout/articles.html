@@ -12,14 +12,14 @@ layout: base__page
         <div class="row">
             {% for item in posts | limit: 6 %}
                 <div class="col-md-6 col-lg-4 mb-3">
-                    {% include app/card.html flat=true %}
+                    {% include card.html flat=true %}
                 </div>
             {% endfor %}
         </div>
 
         <div class="spacer mb-4"></div>
 
-        {% include components/navigation/pagination.html %}
+        {% include snippets/pagination.html %}
     </div>
 </section>
 

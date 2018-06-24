@@ -17,31 +17,31 @@
     <!-- endbuild -->
 </head>
 <body>
-    {% include components/layout/loader.html %}
+    {% include snippets/loader.html %}
 
     <div class="lv-page">
 
         <!-- HEADER -->
         <header class="global-header">
-            {% include components/layout/header.html %}
+            {% include header.html %}
         </header>
 
         {{ content }}
 
         <!-- FOOTER -->
         <footer class="global-footer">
-            {% include components/layout/footer.html %}
+            {% include footer.html %}
         </footer>
 
     </div> <!-- /.lv-page -->
 
     <!-- OFF-CANVAS MENU -->
     <nav class="lv-off-canvas" data-off-canvas-menu aria-hidden="true">
-        {% include components/navigation/navigation.html %}
+        {% include snippets/navigation.html %}
     </nav>
 
     <!-- SEARCH -->
-    {% include components/forms/form_search.html %}
+    {% include snippets/form_search.html %}
 
     <!--[if lte IE 9]>
     <div class="lv-alert-bar">

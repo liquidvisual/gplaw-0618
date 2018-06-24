@@ -16,7 +16,7 @@ layout: base__page_sidebar
             <p>Fill out the form below to receive a free and confidential initial consultation.</p>
         </div>
 
-        {% include app/form_contact.html %}
+        {% include form_contact.html %}
     </div>
 </section>
 
@@ -44,12 +44,12 @@ layout: base__page_sidebar
                 tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
 
-            {% include components/social_media.html %}
+            {% include snippets/social_media.html %}
         </div>
     </section>
 
 {% endcontentfor %}
 
 {% contentfor content_additional %}
-    {% include components/widgets/google_map.html id="google-map" %}
+    {% include snippets/google_map.html id="google-map" %}
 {% endcontentfor %}
