@@ -21,6 +21,15 @@
 	z-index: 1;
 }
 
+// used on about
+.fa.is-opaque {
+	color: rgba(white, 0.3);
+}
+
+.has-image-bg a:hover {
+	color: rgba(white, 0.8);
+}
+
 //-----------------------------------------------------------------
 // PAYPAL FORM - REFACTOR
 //-----------------------------------------------------------------

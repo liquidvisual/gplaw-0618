@@ -1,0 +1,163 @@
+/*
+    SECTIONS_FEATURE.CSS
+
+    - updated: 25.06.18
+    - liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// VARIABLES
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// SECTION CONTENT
+// used in the main-body 2-column layout
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// SPLIT FEATURE (used on homepage)
+//-----------------------------------------------------------------
+
+.section.split-feature {
+    padding: 0; // [RESET] - take padding away from section
+    font-size: rem-calc(20); // [LOCKED]
+
+    p {
+        font-size: rem-calc(20); // [LOCKED]
+    }
+
+    .lead {
+        font-size: rem-calc(31); // hardcoded
+    }
+
+    .fa-lightbulb-o {
+        font-size: rem-calc(54); // [SPECIAL]
+    }
+
+    .fa-credit-card-alt {
+        font-size: rem-calc(35); // [SPECIAL]
+    }
+}
+
+//-----------------------------------------------------------------
+// ALL BLEEDS
+//-----------------------------------------------------------------
+
+.split-feature [class*=bleed-] {
+    position: relative; // [LOCKED] - change positioning context
+    z-index: 1; // [LOCKED]
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -5%; // [LOCKED] - slight fix on SM
+        width: 110%;
+        height: 100%;
+        z-index: -1;
+
+        @include media-breakpoint-up(md) {
+            left: 0; // [LOCKED] - snap back to middle
+            width: 100vw;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// ALL BLEEDS (TOP MODULE)
+//-----------------------------------------------------------------
+
+.split-feature.is-top [class*=bleed-] {
+    padding-top: ($spacer * 2.5); // [LOCKED] - same as section
+    padding-bottom: ($spacer * 2.5); // [LOCKED] - same as section
+
+    @include media-breakpoint-up(lg) {
+        padding-top: rem-calc(140); // [LOCKED] - same as section
+        padding-bottom: rem-calc(180); // [LOCKED] - same as section
+    }
+}
+
+//-----------------------------------------------------------------
+// ALL BLEEDS (BOTTOM MODULE)
+//-----------------------------------------------------------------
+
+.split-feature.is-bottom [class*=bleed-] {
+    padding-top: ($spacer * 2.5); // [LOCKED] - same as section
+    padding-bottom: ($spacer * 2.5); // [LOCKED] - same as section
+
+    @include media-breakpoint-up(lg) {
+        padding-top: rem-calc(105); // [LOCKED] - same as section
+        padding-bottom: rem-calc(85); // [LOCKED] - same as section
+    }
+}
+
+//-----------------------------------------------------------------
+// RIGHT
+//-----------------------------------------------------------------
+
+.split-feature [class*=bleed-left] {
+    @include media-breakpoint-up(md) {
+        &:after {
+            left: auto;
+            right: 0;
+        }
+    }
+}
+
+//-----------------------------------------------------------------
+// COLORS
+//-----------------------------------------------------------------
+
+// PRIMARY - is-top
+.split-feature.is-top .bleed-left-primary,
+.split-feature.is-top .bleed-right-primary {
+    &:after {
+        background: $primary;
+    }
+}
+
+// SECONDARY - is-top
+.split-feature.is-top .bleed-left-secondary,
+.split-feature.is-top .bleed-right-secondary {
+    &:after {
+        background: $secondary;
+    }
+}
+
+// PRIMARY - is-bottom
+.split-feature.is-bottom .bleed-left-primary,
+.split-feature.is-bottom .bleed-right-primary {
+    &:after {
+        background: rgba($primary, 0.74);
+    }
+}
+
+// SECONDARY - is-bottom
+.split-feature.is-bottom .bleed-left-secondary,
+.split-feature.is-bottom .bleed-right-secondary {
+    &:after {
+        background: rgba($secondary, 0.74);
+    }
+}
+
+//-----------------------------------------------------------------
+// MISC
+//-----------------------------------------------------------------
+
+.split-feature.is-top {
+
+    h2 {
+        font-size: rem-calc(43);
+        text-transform: uppercase;
+    }
+
+    li .fa-angle-right {
+        color: #989ba4;
+        transition: color 200ms ease;
+    }
+
+    li a:hover {
+        color: rgba(white, 0.8);
+    }
+}
+
+//=========================================
+//
+//=========================================

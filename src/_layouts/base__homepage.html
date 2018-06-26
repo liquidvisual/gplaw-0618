@@ -2,64 +2,104 @@
 layout: base
 ---
 
+{% assign areas_of_practice = site.data.sitemap[3].children %}
+
 <!-- BODY -->
 <main class="main-body">
 
-	<section class="section has-primary-bg">
+	<!-- SPLIT FEATURE 1 -->
+	<section class="split-feature is-top section is-dark">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6 fill-4">
-					<p class="lead">Griffiths Parry Lawyers have been delivering the Sunshine Coast and beyond with strong legal guidance for a wide range of business needs, personal requirements and property transactions.</p>
+				<div class="col-md-6 bleed-left-primary">
+					<div class="row">
+						<div class="col-md-11 col-lg-10">
 
-					<p>Beyond genuine expertise, we pride ourselves on our approachable and easy to deal with nature. We know you want the expertise to deliver outstanding results. You also want lawyers who can talk to you in plain English, to effectively communicate your options and genuinely understand your needs.</p>
+							<!-- LEAD -->
+							<p class="lead mb-4">Griffiths Parry Lawyers have been delivering the Sunshine Coast and beyond with strong legal guidance for a wide range of business needs, personal requirements and property transactions.</p>
 
-					<!-- BUTTON CTA -->
-					<a class="btn btn-cta" href="/our-people/">
-					    <i class="fa fa-user-circle"></i>
-					    <span class="text">Meet our Team</span>
-					    <i class="fa fa-angle-right"></i>
-					</a>
+							<!-- WYSIWYG -->
+							<div class="wysiwyg">
+								<p>Beyond genuine expertise, we pride ourselves on our approachable and easy to deal with nature. We know you want the expertise to deliver outstanding results. You also want lawyers who can talk to you in plain English, to effectively communicate your options and genuinely understand your needs.</p>
+							</div>
 
+							<!-- BUTTON CTA -->
+							<a class="btn btn-cta" href="/our-people/">
+							    <i class="fa fa-user-circle"></i>
+							    <span class="text">Meet our Team</span>
+							    <i class="fa fa-angle-right"></i>
+							</a>
+
+						</div>
+					</div>
 				</div>
-				<div class="col-md-6 fill-2">
-					<p>I am looking for...</p>
-					<h2>Business Law <i class="fa fa-angle-right"></i></h2>
-					<h2>Property Law <i class="fa fa-angle-right"></i></h2>
-					<h2>Family Law <i class="fa fa-angle-right"></i></h2>
-					<h2>Compensation Law <i class="fa fa-angle-right"></i></h2>
-					<h2>Wills, Deceased Estates <i class="fa fa-angle-right"></i></h2>
+				<div class="col-md-6 bleed-right-secondary">
+					<div class="row">
+						<div class="col-11 offset-md-1">
+
+							<!-- LEAD -->
+							<p class="lead mb-4">I am looking for...</p>
+
+							<!-- PRATICE AREAS -->
+							<ul class="list-unstyled">
+								{% for item in areas_of_practice %}
+								    <li class="mb-4">
+								        <a class="h1 text-uppercase" href="{{ item.url }}">
+								            {{ item.title }}&nbsp;<i class="fa fa-angle-right d-inline"></i>
+								        </a>
+								    </li>
+								{% endfor %}
+							</ul>
+
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- SPLIT SECTION -->
-	<section class="section is-dark split-section has-image-bg has-bleed" style="background-image: url(/assets/img/content/meeting.jpg)">
+	<!-- SPLIT FEATURE 2 -->
+	<section class="split-feature is-bottom section is-dark has-image-bg" style="background-image: url(/assets/img/content/meeting.jpg)">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 bleed-left-secondary">
 					<div class="row">
-						<div class="col-10 col-lg-11">
+						<div class="col-md-11 col-lg-10">
+
+							<!-- INTRO HEADING -->
 							<h2 class="mb-4">Donec quam felis, s nec, pellent esque eu, pretium nascetur ridiculus.</h2>
-							<p>Some ‘about us’ content, sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellent esque eu, pretium quis, sem. Nulla consequat massa quis enim parturient montes. Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, s nec, pellent esque eu, pretium. nascetur ridiculus mus. Donec quam felis, ultricies necent esque eu, quis, sem. Nulla consequat massa  nascetur ridiculus mus.  orem ipsum.</p>
-							<div class="spacer mb-4"></div>
+
+							<!-- WYSIWYG -->
+							<div class="wysiwyg mb-5">
+								<p>Some ‘about us’ content, sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellent esque eu, pretium quis, sem. Nulla consequat massa quis enim parturient montes. Penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, s nec, pellent esque eu, pretium. nascetur ridiculus mus. Donec quam felis, ultricies necent esque eu, quis, sem. Nulla consequat massa  nascetur ridiculus mus.  orem ipsum.</p>
+							</div>
 
 							<!-- READ MORE -->
 							<a href="#" class="btn btn-primary">Read more <i class="fa fa-angle-right"></i></a>
 
-							<div class="spacer mb-5 hidden-md-up"></div>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 bleed-right-primary">
 					<div class="row">
 						<div class="col-11 offset-md-1">
-							<div class="spacer mt-5 hidden-md-up"></div>
+
+							<!-- FEATURE HEADING -->
 							<h2><i class="fa fa-credit-card-alt"></i>&nbsp; Fee Funding</h2>
-							<p>We are pleased to advise that with Griffiths Parry Lawyers you now have the option of paying your fees in monthly instalments. Having funds available for a legal matter is recognised by Griffiths Parry Lawyers as being of real concern to clients and in support of this we have implemented an alternative payment option for the convenience of eligible clients.</p>
-							<div class="spacer mb-4"></div>
+
+							<!-- WYSIWYG -->
+							<div class="wysiwyg mb-4 pb-1">
+								<p>We are pleased to advise that with Griffiths Parry Lawyers you now have the option of paying your fees in monthly instalments. Having funds available for a legal matter is recognised by Griffiths Parry Lawyers as being of real concern to clients and in support of this we have implemented an alternative payment option for the convenience of eligible clients.</p>
+							</div>
+
+							<!-- FEATURE HEADING -->
 							<h2><i class="fa fa-lightbulb-o"></i>&nbsp; Genuine Solutions</h2>
-							<p>Our clients are provided with clear, effective advice tailored to their specific needs and goals. Our lawyers are highly regarded experts and are supported by a dedicated team of professionals.</p>
+
+							<!-- WYSIWYG -->
+							<div class="wysiwyg">
+								<p>Our clients are provided with clear, effective advice tailored to their specific needs and goals. Our lawyers are highly regarded experts and are supported by a dedicated team of professionals.</p>
+							</div>
+
 						</div>
 					</div>
 				</div>

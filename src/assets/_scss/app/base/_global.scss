@@ -12,6 +12,8 @@
 //-----------------------------------------------------------------
 
 .container {
+	padding: rem-calc(0 15);
+
 	@include media-breakpoint-up(sm) {
 	    padding: 0 $container-gutter/1.5; // [LOCKED] - iPhone6 up has slight gutter
 	}
@@ -30,7 +32,7 @@
 //-----------------------------------------------------------------
 
 .main-body {
-	overflow: hidden;
+	overflow: hidden; // added
 
 	@include media-breakpoint-down(md) {
 		> .container {
@@ -53,7 +55,7 @@
 }
 
 //-----------------------------------------------------------------
-//
+// Bootstrap 4.2 should fix this
 //-----------------------------------------------------------------
 
 [class*='col'] {

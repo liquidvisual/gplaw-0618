@@ -27,11 +27,15 @@ layout: base__page_sidebar
 {% contentfor sidebar %}
     <section class="section">
         <div class="container">
-            {% for item in areas_of_practice_sub_items %}
-                <a class="btn-header {% if forloop.first %}active{% endif %}" href="{{ item.url }}">
-                    <h5 class="text-uppercase mb-0">{{ item.title }} <i class="fa fa-angle-right"></i></h5>
-                </a>
-            {% endfor %}
+            <ul class="list-unstyled">
+                {% for item in areas_of_practice_sub_items %}
+                    <li>
+                        <a class="btn-header {% if forloop.first %}active{% endif %}" href="{{ item.url }}">
+                            <h5 class="text-uppercase mb-0">{{ item.title }}&nbsp;<i class="fa fa-angle-right d-inline"></i></h5>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </section>
 {% endcontentfor %}

@@ -21,8 +21,8 @@ layout: base__page
         </p>
 
         <!-- IMAGE -->
-        <p class="float-right ml-5 mb-4">
-            <img src="{{ item.image }}" alt="{{ item.image.title }}">
+        <p class="img-right">
+            <img width="100%" src="{{ item.image }}" alt="{{ item.image.title }}">
         </p>
 
         <!-- WYSIWYG -->
@@ -30,12 +30,11 @@ layout: base__page
             {{ item.body | markdownify }}
         </div>
 
-        <!-- { % include components/navigation/pagination.html %} -->
     </div>
 </section>
 
 <div class="container">
-    <hr>
+    <hr class="mb-0">
 </div>
 
 {% include latest_articles.html title="Other Articles" %}

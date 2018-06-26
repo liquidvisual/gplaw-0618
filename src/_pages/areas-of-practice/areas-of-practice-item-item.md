@@ -3,7 +3,7 @@ layout: child_layout/areas_of_practice_item_item
 title: Commercial Litigation
 title_override: Business Law
 permalink: /areas-of-practice/business-law/commercial-litigation/
-bg_image: /assets/img/content/hero/hero-3.jpg
+bg_image: /assets/img/content/hero/hero-4.jpg
 breadcrumbs: true
 lead: |
   To achieve your objective, it is essential in litigation to devise and implement an effective legal strategy that will account for the potential twists and turns at each stage of the litigation process.

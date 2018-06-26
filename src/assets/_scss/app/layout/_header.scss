@@ -25,7 +25,8 @@ $header-bottom-lg-height: 50px !default;
 //-----------------------------------------------------------------
 
 .lv-page {
-	// background: grey;
+	padding-top: $header-top-sm-height;
+
 	@include media-breakpoint-up(md) {
 	    padding-top: $header-top-lg-height + $header-body-lg-height;
 	}
@@ -59,10 +60,6 @@ $header-bottom-lg-height: 50px !default;
 
 .headroom--top.global-header {
 	background: white; // Need for animation
-
-	@include media-breakpoint-up(md) {
-	    // padding-bottom: rem-calc(10);
-	}
 }
 
 //****************************************************
@@ -84,8 +81,10 @@ $header-bottom-lg-height: 50px !default;
 		// transition: all 200ms ease-out;
 		align-items: center;
 
+
 		@include media-breakpoint-up(md) {
 		    height: $header-body-md-height;
+		    padding-bottom: rem-calc(20); // fix
 		}
 
 		.logo img {
@@ -106,7 +105,8 @@ $header-bottom-lg-height: 50px !default;
 	top: 0;
 	width: 100%;
 	will-change: transform;
-	transition: transform 200ms linear, background-color 200ms ease;
+	// transition: transform 200ms linear, background-color 200ms ease;
+	transition: transform 200ms linear;
 	z-index: 9999;
 
 	@include media-breakpoint-down(sm) {
@@ -193,7 +193,7 @@ $header-bottom-lg-height: 50px !default;
 		align-items: flex-end;
 	    height: $header-body-lg-height;
 	    // height: auto;
-	    padding: rem-calc(20 0);
+	    padding: rem-calc(20 0 30 0); // [LOCKED]
 	}
 
 	// @include media-breakpoint-up(lg) {
@@ -235,7 +235,11 @@ $header-bottom-lg-height: 50px !default;
 		}
 
 		@include media-breakpoint-up(md) {
-			// max-height: rem-calc(60);
+		    max-width: rem-calc(400);
+		}
+
+		@include media-breakpoint-up(xxl) {
+			max-width: rem-calc(464);
 		}
 	}
 }

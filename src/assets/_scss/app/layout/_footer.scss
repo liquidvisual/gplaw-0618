@@ -28,7 +28,7 @@
 	}
 }
 
-.bleed-right-secondary {
+.global-footer .bleed-right-secondary {
 	@include media-breakpoint-down(sm) {
 	    position: relative;
 	    padding-top: $spacer*1.5;
@@ -72,8 +72,8 @@
 		padding-bottom: $spacer;
 
 		@include media-breakpoint-up(md) {
-		    padding-top: rem-calc(85);
-		    padding-bottom: rem-calc(50);
+		    padding-top: rem-calc(70);
+		    padding-bottom: rem-calc(30);
 		}
 	}
 
@@ -96,19 +96,19 @@
 // FOOTER BODY CONTACT
 //-----------------------------------------------------------------
 
+.sidebar .contact, // so hacky
 .global-footer-body .contact {
+	max-width: rem-calc(300);
+
 	hr {
 		border-color: rgba(white, 0.25);
-
-		@include media-breakpoint-up(md) {
-		    max-width: rem-calc(280);
-		    margin-left: 0;
-		}
+		margin-bottom: rem-calc(24); // magic
 	}
 
 	.fa-phone,
 	.fa-envelope,
-	.fa-map-marker {
+	.fa-map-marker,
+	.fa-fax {
 		position: relative;
 		width: rem-calc(20);
 		margin-right: rem-calc(10);
@@ -125,6 +125,19 @@
 	}
 }
 
+.sidebar .contact {
+	max-width: none;
+
+	a {
+		color: white;
+		font-weight: $font-weight-normal;
+
+		&:hover {
+			color: rgba(white, 0.8);
+		}
+	}
+}
+
 //-----------------------------------------------------------------
 // FOOTER BOTTOM
 //-----------------------------------------------------------------
@@ -136,7 +149,7 @@
 	text-transform: uppercase;
 
 	small, a {
-		color: rgba(white, 0.4);
+		color: rgba(white, 0.6);
 	}
 
 	a {

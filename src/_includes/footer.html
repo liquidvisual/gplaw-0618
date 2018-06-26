@@ -8,11 +8,16 @@
 
 				<!-- CONTACT -->
 				<div class="contact">
+
+					<!-- OFFICE -->
 					<h4 class="text-uppercase mb-3">
 						<span class="font-weight-semibold">Griffiths Parry</span> <br>
 						<span class="h5 font-weight-normal">Lawyers &amp; Notary</span>
 					</h4>
+
 					<hr>
+
+					<!-- PHONE -->
 					<p class="mb-1">
 					    <a class="d-inline-flex align-items-center" href="{{ tel:settings.offices[0].phone_2 }}">
 					        <i class="fa fa-phone"></i>
@@ -20,12 +25,16 @@
 					        <span class="text">{{ settings.offices[0].phone_2 }}</span>
 					    </a>
 					</p>
+
+					<!-- EMAIL -->
 					<p class="mb-1">
 					    <a class="d-inline-flex align-items-center" href="{{ mailto:settings.offices[0].email }}">
 					        <i class="fa fa-envelope"></i>
 					        <span class="text">{{ settings.offices[0].email }}</span>
 					    </a>
 					</p>
+
+					<!-- ADDRESS -->
 					<p class="mb-1">
 		                <span class="d-inline-flex">
 		                    <i class="fa fa-map-marker"></i>
@@ -36,6 +45,7 @@
 		                    </span>
 		                </span>
 					</p>
+
 				</div>
 
 			</div>
@@ -58,14 +68,24 @@
 <!-- FOOTER BOTTOM -->
 <section class="global-footer-bottom">
     <div class="container">
-
 		<div class="row">
 			<div class="col-md-6 text-center text-md-left">
 
-				<small class="mr-4">&copy; <date><script>document.write(new Date().getFullYear())</script></date> {{ settings.company }}</small>
+				<!-- DATE -->
+				<small class="mr-4">&copy;
+					<date><script>document.write(new Date().getFullYear())</script></date>
+					{{ settings.company }}
+				</small>
 
-				<!-- OPTIONAL LINKS -->
-				<small class="mr-2"><a href="/privacy-policy/">Privacy Policy</a></small>
+				<!-- PRIVACY POLICY -->
+				<small class="mr-4">
+					<a href="/privacy-policy/">Privacy Policy</a>
+				</small>
+
+				<!-- ANOTHER LINK EXAMPLE -->
+				<!-- <small class="mr-2">
+					<a href="/">Sitemap</a>
+				</small> -->
 
 			</div>
 			<div class="col-md-6 text-center text-md-right">
@@ -74,7 +94,7 @@
 				<small>
 					<a class="author-logo" target="_blank" href="{{ settings.author.url }}">
 				    	<span class="text">{{ settings.author.description }}</span>&nbsp;
-				    	<img width="20" height="20" src="{{ settings.author.logo }}" alt="Powered by {{ settings.author.title }}">
+				    	<img width="20" height="20" src="{{ settings.author.logo }}" alt="Website by {{ settings.author.title }}">
 					</a>
 				</small>
 

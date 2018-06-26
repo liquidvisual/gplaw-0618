@@ -17,6 +17,7 @@ layout: base__page_sidebar
         </div>
 
         {% include form_contact.html %}
+
     </div>
 </section>
 
@@ -26,17 +27,45 @@ layout: base__page_sidebar
     <section class="section">
         <div class="container">
 
-            <h4 class="text-uppercase mb-3">
-                Griffiths Parry<br>
-                Lawyers &amp; Notary
-            </h4>
-
-            <p>
-                {{ settings.offices[0].title }}<br>
-                {{ settings.offices[0].address }}<br>
-                <a href="mailto:settings.offices[0].email">{{ settings.offices[0].email }}</a>
-            </p>
-            <br>
+            <!-- CONTACT -->
+            <div class="contact mb-4">
+                <h4 class="text-uppercase mb-3">
+                    <span class="font-weight-semibold">Griffiths Parry</span> <br>
+                    <span class="h5 font-weight-normal">Lawyers &amp; Notary</span>
+                </h4>
+                <hr>
+                <p class="mb-1">
+                    <a class="d-inline-flex align-items-center" href="{{ tel:settings.offices[0].phone_2 }}">
+                        <i class="fa fa-phone"></i>
+                        <span class="text">{{ settings.offices[0].phone_2 }}</span>
+                    </a>
+                </p>
+                <p class="mb-1">
+                    <a class="d-inline-flex align-items-center" href="{{ mailto:settings.offices[0].email }}">
+                        <i class="fa fa-envelope"></i>
+                        <span class="text">{{ settings.offices[0].email }}</span>
+                    </a>
+                </p>
+                <p class="mb-1">
+                    <a class="d-inline-flex align-items-center" href="{{ tel:settings.offices[0].fax }}">
+                        <i class="fa fa-fax"></i>
+                        <span class="text">{{ settings.offices[0].fax }} <i>(fax)</i></span>
+                    </a>
+                </p>
+                <p class="mb-1">
+                    <span class="d-inline-flex">
+                        <i class="fa fa-map-marker"></i>
+                        <span class="text">{{ settings.offices[0].address }}</span>
+                    </span>
+                </p>
+                <p class="my-4">
+                    <b>PO BOX:</b><br>
+                    <span class="text">
+                        PO Box 1515
+                        Buddina QLD 4575
+                    </span>
+                </p>
+            </div>
 
             <!-- WYSIWYG -->
             <div class="wysiwyg mb-4">

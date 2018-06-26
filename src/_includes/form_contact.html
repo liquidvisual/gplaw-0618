@@ -15,33 +15,47 @@
 </div>
 
 <!-- FORM CONTACT -->
-<form id="form-contact" name="Contact Form" action="/" data-toggle="validator" novalidate>
+<form id="form-contact" class="form-contact" name="Contact Form" action="/" data-toggle="validator" novalidate>
     <fieldset class="mb-1">
 
        <!-- NAME* -->
-       <label class="form-group d-block mb-3">
-           <!-- <p class="mb-2">Name<small class="asterisk">*</small></p> -->
-           <input class="form-control" name="Name" type="text" placeholder="Name*" required>
+       <label class="form-group d-block mb-4">
+           <p class="mb-2">Name<small class="asterisk">*</small></p>
+           <input class="form-control" name="Name" type="text" placeholder="" required>
            <small class="error shake animated"><i class="fa fa-warning"></i>&nbsp; Your name is required.</small>
        </label>
 
         <!-- EMAIL* -->
-        <label class="form-group d-block mb-3">
-            <!-- <p class="mb-2">Email<small class="asterisk">*</small></p> -->
-            <input class="form-control" name="Email" type="email" placeholder="Email*" required>
+        <label class="form-group d-block mb-4">
+            <p class="mb-2">Email<small class="asterisk">*</small></p>
+            <input class="form-control" name="Email" type="email" placeholder="" required>
             <small class="error shake animated"><i class="fa fa-warning"></i>&nbsp; A valid email is required.</small>
         </label>
 
         <!-- PHONE -->
-        <label class="form-group d-block mb-3">
-            <!-- <p class="mb-2">Phone</p> -->
-            <input class="form-control" name="Phone" type="text" placeholder="Phone">
+        <label class="form-group d-block mb-4">
+            <p class="mb-2">Phone</p>
+            <input class="form-control" name="Phone" type="text" placeholder="">
+        </label>
+
+        <!-- REFERRAL -->
+        <label class="form-group d-block mb-4">
+            <p>I would like to discuss</p>
+            <select class="custom-select" name="Referral">
+                <option disabled selected>Choose one</option>
+                <option value="General">General</option>
+                <option value="Business Law">Business Law</option>
+                <option value="Property Law">Property Law</option>
+                <option value="Compensation law">Compensation Law</option>
+                <option value="Family Law">Family Law</option>
+                <option value="Will and Estates">Wills and Estates</option>
+            </select>
         </label>
 
         <!-- MESSAGE* -->
-        <label class="form-group d-block">
-            <!-- <p class="mb-3">Message<small class="asterisk">*</small></p> -->
-            <textarea class="form-control" name="Message" rows="6" placeholder="Message*" required></textarea>
+        <label class="form-group d-block mb-4">
+            <p class="mb-3">Message<small class="asterisk">*</small></p>
+            <textarea class="form-control" name="Message" rows="6" placeholder="" required></textarea>
             <small class="error shake animated"><i class="fa fa-warning"></i>&nbsp; Please write your message.</small>
         </label>
 

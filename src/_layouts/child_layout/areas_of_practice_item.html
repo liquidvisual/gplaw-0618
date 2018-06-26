@@ -5,23 +5,22 @@ layout: base__page
 {% assign areas_of_practice_sub_items = site.data.sitemap[3].children[0].children %}
 
 <!-- SECTION -->
-<section class="section is-dark pb-lg-4">
+<section class="section is-dark">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
 
-                <!-- WYSIWYG -->
-                <div class="wysiwyg lead mb-5">
-                    {{ content | markdownify }}
-                </div>
+                <!-- LEAD -->
+                <p class="lead mb-4">{{ page.lead }}</p>
 
             </div>
             <div class="col-md-8">
                 <div class="pl-md-5">
 
+                    <!-- AREAS OF PRACTICE -->
                     {% for item in areas_of_practice_sub_items %}
                         <a class="d-block btn-header mb-4" href="{{ item.url }}">
-                            <h2 class="text-uppercase mb-0">{{ item.title }} <i class="fa fa-angle-right"></i></h2>
+                            <h2 class="text-uppercase mb-0">{{ item.title }}&nbsp;<i class="fa fa-angle-right d-inline"></i></h2>
                         </a>
                     {% endfor %}
 
@@ -30,5 +29,7 @@ layout: base__page
         </div>
     </div>
 </section>
+
+{% include latest_articles.html %}
 
 {% include section_contact.html %}

@@ -41,10 +41,8 @@ layout: base__page
     </div>
 </section>
 
-<h4 class="text-center">TODO: BG OPACITY, PADDING-Y, ARROWS GREY</h4>
-
 <!-- SECTION -->
-<section class="section is-tinted has-image-bg" style="background-image: url(/assets/img/content/meeting.jpg">
+<section class="section is-tinted has-image-bg pb-5" style="background-image: url(/assets/img/content/hero/bg-1.jpg">
 
     <!-- HEADER -->
     <h2 class="spec-header text-uppercase text-center">
@@ -53,15 +51,16 @@ layout: base__page
         </div>
     </h2>
 
-    <div class="spacer py-5">-</div>
+    <div class="spacer mt-2 mb-5"></div>
+    <div class="spacer my-4 hidden-md-up"></div>
 
     <!-- BODY -->
     <div class="container">
-        <ul class="block-grid-md-3">
+        <ul class="block-grid-xs-1 block-grid-md-3">
             {% for item in areas_of_practice %}
                 <li>
                     <a class="text-light" href="{{ item.url }}">
-                        <h3>{{ item.title }} <i class="fa fa-angle-right"></i></h3>
+                        <h3 class="h2">{{ item.title }} <i class="fa fa-angle-right is-opaque"></i></h3>
                     </a>
                     <ul class="list-unstyled">
                         {% for item in item.children %}
@@ -78,4 +77,6 @@ layout: base__page
     </div>
 </section>
 
-<!-- { % include section_contact.html %} -->
+{% include latest_articles.html %}
+
+{% include section_contact.html %}

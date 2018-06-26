@@ -42,7 +42,12 @@ $font-family-serif: inherit !default;
 
 	@include media-breakpoint-up(md) {
 	    float: left;
-	    margin: $spacer $spacer 0 0;
+	    margin: rem-calc(0 70 50 0);
+	    max-width: rem-calc(400);
+	}
+
+	@include media-breakpoint-up(lg) {
+	    max-width: none;
 	}
 }
 
@@ -55,7 +60,12 @@ $font-family-serif: inherit !default;
 
 	@include media-breakpoint-up(md) {
 	    float: right;
-	    margin: 0 0 $spacer $spacer;
+	    margin: rem-calc(0 0 20 70);
+	    max-width: rem-calc(400);
+	}
+
+	@include media-breakpoint-up(lg) {
+	    max-width: none;
 	}
 }
 

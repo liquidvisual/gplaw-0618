@@ -6,11 +6,11 @@ layout: base__page
 {% assign areas_of_practice = site.data.sitemap[3].children %}
 
 <!-- SECTION -->
-<section class="section is-dark">
+<section class="section is-dark py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-8 pr-md-5">
-                <p class="lead">
+                <p class="lead mb-0">
                     Beyond genuine expertise, we pride ourselves on our approachable and easy to deal with nature. We know you want the expertise to deliver outstanding results. You also want lawyers who can talk to you in plain English, to effectively communicate your options and genuinely understand your needs.
                 </p>
             </div>
@@ -19,7 +19,7 @@ layout: base__page
 </section>
 
 <!-- SECTION -->
-<section class="section has-image-bg is-tinted" style="background-image: url(/assets/img/content/meeting.jpg">
+<section class="section has-image-bg is-tinted has-less-tint" style="background-image: url(/assets/img/content/hero/bg-3.jpg">
     <div class="container">
         <ul class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3">
             {% for item in areas_of_practice %}
@@ -35,7 +35,3 @@ layout: base__page
 </section>
 
 {% include latest_articles.html %}
-
-{% contentfor content_additional %}
-    {% include snippets/google_map.html id="google-map" %}
-{% endcontentfor %}

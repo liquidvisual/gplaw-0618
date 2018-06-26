@@ -19,6 +19,12 @@ textarea {
 	-webkit-appearance: none; // removes shadow on iOS
 }
 
+.form-contact-centered {
+	input, textarea {
+		border: 0;
+	}
+}
+
 //-----------------------------------------------------------------
 // BOOTSTRAP VALIDATION
 // http://1000hz.github.io/bootstrap-validator/#validator-events
@@ -47,19 +53,19 @@ form[data-toggle="validator"] .has-error > .error {
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 	text-transform: uppercase;
-	color: #cdcdcd !important;
+	color: darken(#cdcdcd, 10%) !important;
 }
 ::-moz-placeholder { /* Firefox 19+ */
 	text-transform: uppercase;
-	color: #cdcdcd !important;
+	color: darken(#cdcdcd, 10%) !important;
 }
 :-ms-input-placeholder { /* IE 10+ */
 	text-transform: uppercase;
-	color: #cdcdcd !important;
+	color: darken(#cdcdcd, 10%) !important;
 }
 :-moz-placeholder { /* Firefox 18- */
 	text-transform: uppercase;
-	color: #cdcdcd !important;
+	color: darken(#cdcdcd, 10%) !important;
 }
 
 //-----------------------------------------------------------------
