@@ -4,7 +4,7 @@ title: Tracy Price
 title_override: Our Team
 permalink: /our-team/tracy-price/
 bg_image: /assets/img/content/meeting.jpg
-hero_options: is-short
+hero_options:
 breadcrumbs: true
 breadcrumbs_text: 'Back'
 ---

@@ -17,14 +17,27 @@
 
 .section.split-feature {
     padding: 0; // [RESET] - take padding away from section
-    font-size: rem-calc(20); // [LOCKED]
 
-    p {
+    @include media-breakpoint-up(md) {
         font-size: rem-calc(20); // [LOCKED]
     }
 
+    p {
+        @include media-breakpoint-up(md) {
+            font-size: rem-calc(20); // [LOCKED]
+        }
+    }
+
     .lead {
-        font-size: rem-calc(31); // hardcoded
+        font-size: rem-calc(22);
+
+        @include media-breakpoint-down(sm) {
+            font-weight: $font-weight-semibold;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: rem-calc(31); // hardcoded
+        }
     }
 
     .fa-lightbulb-o {

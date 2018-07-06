@@ -215,12 +215,7 @@
 .btn-tile {
     display: block;
     position: relative;
-    height: rem-calc(250);
     overflow: hidden;
-
-    @include media-breakpoint-up(md) {
-        height: auto;
-    }
 
     //=========================================
     // IS SLIM

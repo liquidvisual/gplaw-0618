@@ -4,7 +4,7 @@ title: The Trick to Creating Delicious Meals on the Go
 title_override: Articles
 permalink: /articles/articles-item/
 bg_image: /assets/img/content/hero/hero-articles.jpg
-hero_options: is-short
+hero_options:
 breadcrumbs: true
 breadcrumbs_text: 'Back'
 ---
