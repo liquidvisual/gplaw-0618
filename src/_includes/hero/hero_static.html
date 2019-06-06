@@ -12,6 +12,7 @@
 {% assign options = include.options %}
 {% assign bg_image = page.bg_image %}
 {% assign breadcrumbs = page.breadcrumbs %}
+{% assign hero_quote = page.hero_quote  %}
 
 <!-- HERO WRAPPER -->
 <section id="{{ id }}" class="lv-hero-wrapper">
@@ -20,24 +21,47 @@
     <div class="lv-hero is-static {{ options }}">
 
         <!-- HERO ITEM -->
-        <div class="lv-hero-item align-items-end is-tinted" style="background-image: url('{{ bg_image }}')">
+        <div class="lv-hero-item align-items-endX is-tinted" style="background-image: url('{{ bg_image }}')">
+            <div class="container h-100">
 
-            <!-- HERO CAPTION -->
-            <div class="container">
-                <div class="lv-hero-item-caption animated fadeInLeftSubtle">
+                <!-- HERO CAPTION -->
+                <div class="lv-hero-item-caption animated fadeInLeftSubtle h-100">
+                    <div class="row h-100">
+                        <div class="col-md-7 d-flex">
+                            <div class="lv-hero-item-caption-body mt-auto">
 
-                    {% if breadcrumbs %}
-                        {% include snippets/breadcrumbs.html %}
-                    {% endif %}
+                                {% if breadcrumbs %}
+                                    {% include snippets/breadcrumbs.html %}
+                                {% endif %}
 
-                    {% if page.title_override %}
-                        <h2 class="display-1">{{ page.title_override }}</h2>
-                    {% else %}
-                        <h1 class="display-1">{{ page.title }}</h1>
-                    {% endif %}
+                                {% if page.title_override %}
+                                    <h2 class="display-1 mb-md-4">{{ page.title_override }}</h2>
+                                {% else %}
+                                    <h1 class="display-1 mb-md-4">{{ page.title }}</h1>
+                                {% endif %}
+
+                            </div>
+                        </div>
+
+                        {% if hero_quote %}
+
+                            <!-- HERO QUOTE (OPTIONAL) -->
+                            <div class="col-md-5 lv-hero-item-caption-quote d-flex text-md-right">
+                                <blockquote class="blockquote mb-0 my-md-auto">
+                                    <p class="pb-1">
+                                        {{ hero_quote.body }}
+                                    </p>
+                                    <div class="spacer mb-2"></div>
+                                    <b>{{ hero_quote.cite }}</b>
+                                </blockquote>
+                            </div>
+
+                        {% endif %}
+
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
 </section>
