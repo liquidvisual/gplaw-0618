@@ -1,7 +1,7 @@
 {% assign social_media = site.data.social_media %}
 
 <!-- SOCIAL MEDIA -->
-<div class="social-media">
+<div class="social-media" style="width: 12.500em">
 	{% for item in social_media %}
 		{% if item.url %}
 			<a title="{{ item.title }}" href="{{ item.url }}" target="_blank" class="{{ item.title | slugify }}">

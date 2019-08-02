@@ -93,6 +93,30 @@
 }
 
 //-----------------------------------------------------------------
+// FOOTER BODY - BTN TILES
+//-----------------------------------------------------------------
+
+.global-footer .btn-tiles {
+	@include media-breakpoint-up(xl) {
+		padding-left: 11%;
+	}
+
+	.btn-tile {
+		margin-bottom: rem-calc(15);
+		padding: rem-calc(18 24 5 24);
+		background: rgba(black, 0.11);
+
+		@include media-breakpoint-up(md) {
+		    margin-left: rem-calc(13);
+		}
+
+		p {
+			font-size: rem-calc(16);
+		}
+	}
+}
+
+//-----------------------------------------------------------------
 // FOOTER BODY CONTACT
 //-----------------------------------------------------------------
 
